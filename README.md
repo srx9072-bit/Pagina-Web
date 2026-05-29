@@ -31,36 +31,16 @@ Pagina-Web/
 ```sql
 CREATE DATABASE SpeedCargo;
 GO
+USE DATABASE SpeedCargo
 ```
 
 ### 2. Ejecutar el schema
 
-Abrir `database/schema.sql` en SQL Server Management Studio (SSMS) contra la base `SpeedCargo` y ejecutar, **o** desde consola:
-
-```bash
-sqlcmd -S localhost -U sa -P TuContraseña -d SpeedCargo -i database/schema.sql
-```
+Abrir `database/schema.sql` en SQL Server Management Studio (SSMS) contra la base `SpeedCargo` y ejecutar el query
 
 ### 3. Opción A — Seed con SQL puro (recomendado para demo)
 
-Ejecutar `database/seed.sql` en SSMS:
-
-```bash
-sqlcmd -S localhost -U sa -P TuContraseña -d SpeedCargo -i database/seed.sql
-```
-
-> **Nota:** Los hashes de contraseña en `seed.sql` son de ejemplo.
-> Para que el **login funcione**, ejecutar el seeder JS (Opción B).
-
-### 3. Opción B — Seed con Node.js (contraseñas bcrypt reales)
-
-```bash
-cd backend
-npm install
-node seed.js
-```
-
----
+Ejecutar `database/seed.sql` en SQL, al igual que el anterior
 
 ## Backend — Servidor API
 
