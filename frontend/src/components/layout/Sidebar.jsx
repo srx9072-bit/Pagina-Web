@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   LayoutDashboard, Package, Calculator, MapPin, Users,
-  LogOut, Zap, ChevronRight, Bell, Settings
+  LogOut, ChevronRight, Bell, Settings
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
@@ -29,9 +29,7 @@ export default function Sidebar({ activeTab, onTabChange }) {
       {/* Logo */}
       <div className="px-6 py-5 border-b border-dark-border">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shadow-glow">
-            <Zap size={16} className="text-white" />
-          </div>
+          <img src="/logochejo.jpeg" alt="SpeedCargo" className="h-9 w-auto object-contain" />
           <span className="font-display text-xl tracking-widest text-white">
             SPEED<span className="text-primary">CARGO</span>
           </span>
