@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Zap, Eye, EyeOff, Loader2, ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { Eye, EyeOff, Loader2, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 
@@ -76,9 +76,7 @@ export default function Login() {
         <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
 
         <Link to="/" className="relative flex items-center gap-2.5">
-          <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center shadow-glow">
-            <Zap size={18} className="text-white" />
-          </div>
+          <img src="/logochejo.jpeg" alt="SpeedCargo" className="h-12 w-auto object-contain" />
           <span className="font-display text-2xl tracking-widest text-white">
             SPEED<span className="text-primary">CARGO</span>
           </span>

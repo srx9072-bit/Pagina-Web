@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Package, LayoutDashboard, LogOut, Search, Zap, User } from 'lucide-react';
+import { Menu, X, Package, LayoutDashboard, LogOut, Search, User } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
 const navLinks = [
@@ -50,9 +50,7 @@ export default function Header() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center shadow-glow group-hover:shadow-glow-lg transition-shadow">
-              <Zap size={18} className="text-white" />
-            </div>
+            <img src="/logochejo.jpeg" alt="SpeedCargo" className="h-10 w-auto object-contain" />
             <span className="font-display text-2xl tracking-widest text-white">
               SPEED<span className="text-primary">CARGO</span>
             </span>
